@@ -1,3 +1,9 @@
-task hello {
+task hello << {
     println 'Hello World'
+}
+
+task upper << {
+    String someString = "mY_palCe"
+    println "Original  String:" + someString
+    println "Upper String:" + someString.toUpperCase()
 }
